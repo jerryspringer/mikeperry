@@ -1,5 +1,6 @@
 # Welcome to Bomb Squad, I wanted to do something a little different within the master-mind perimeters
-# I thought by introducing the idea of defusing a bomb was a nice way to structure a super lite story around the code.
+# I thought by introducing the idea of defusing a bomb, it would be more interesting than making it into a board game.
+# though the plot isn't captivating, it makes sense in this context
 # this game is played with a player and the computer. The computer generates a 4 character code that the player must break
 # if the code is broken, the people are saved. if the player does not get the code by the 10th attempt, the bomb goes off
 

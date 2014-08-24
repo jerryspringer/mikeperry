@@ -41,7 +41,7 @@ class Bombsquad
 		end
 	end
 
-
+    puts "tick...tick..........tick.......................................click." 
 	puts "KAAAAAAAAAAAAAAAAABOOOM! The bomb blew up, you should have studied harder at the academy. GAME OVER!!!!!!!!!!!!!!!!"
 	return
 end
@@ -92,11 +92,15 @@ end
 
 class Player
 	def code_break
+		puts "Bomb Squad: The Game"
+		puts "Attention, Attention!!"
 		puts "Welcome to your first day on the job"
 		puts "You are a member of the Bomb Squad. You have been alerted of a bomb threat that involves a 4 color code."
+		puts "If you can't break the code in 10 attempts, the bomb will detonate."
 		puts "You are the only one who can break it."
 		puts "Good luck, everyone is counting on you."
 		puts "Your choices are R (red), Y (yellow), W (white), O (orange), B (blue), and P (purple)"
+		puts "Don't screw this up buddy times-a-wastin'"
 		puts "tick.....tick.....tick........"
 		second_guess(gets.chomp)
 	end
@@ -105,3 +109,4 @@ class Player
 		guess.split('')
 	end
 end
+

@@ -1,11 +1,12 @@
 # game class as well as colors for the MM choices
-class Mastermind
+class Bombsquad
 	COLORS = ["R", "Y", "W", "O", "B", "P"]
 
 # computer and Plater
-	def initialize
+	def initialize(start)
 		@player = Player.new
 		@computer = Computer.new
+		@start = Start.new 
 	end
 
 
@@ -13,6 +14,9 @@ class Mastermind
 	# in turns. if the code is precise a message will say you won. if It is close and or/on point the player will also be notified
 
 	def play
+			puts "@start => " + @start.inspect
+			puts "Start Game."
+		start = @start
 
 		10.times do |i| 
 			puts "This is your #{i + 1} turn of 10 you have #{i - 1} chances to break the code or the bomb will go off. The clock is ticking."
@@ -29,6 +33,7 @@ class Mastermind
 			puts "#{standing[:close].length} selections are close to the code, but still not enough to defuse the bomb."
 		end
 	end
+
 
 	puts "KAAAAAAAAAAAAAAAAABOOOM! The bomb blew up, you should have studied harder at the academy."
 	return
@@ -69,7 +74,7 @@ end
 	#helps generate the colors as well as shuffle them for a new outcome every game.
 
 	def code
-		colors = Mastermind::COLORS.shuffle
+		colors = Bombsquad::COLORS.shuffle
 		generated_code = []
 		4.times{ generated_code << colors}
 		generated_code
@@ -93,5 +98,3 @@ class Player
 		guess.split('')
 	end
 end
-
-

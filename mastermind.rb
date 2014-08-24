@@ -1,3 +1,10 @@
+# Welcome to bomb squad, I wanted to do something a little different within the master-mind perimeters
+# I thought by introducing the idea of defusing a bomb was a nice way to structure a super lite story around the code.
+# this game is played with a player and the computer. The computer generates a 4 character code that the player must break
+# if the code is broken, the people are saved. if the player does not get the code by the 10th attempt, the bomb goes off
+
+
+
 # game class as well as colors for the MM choices
 class Bombsquad
 	COLORS = ["R", "Y", "W", "O", "B", "P"]
@@ -35,7 +42,7 @@ class Bombsquad
 	end
 
 
-	puts "KAAAAAAAAAAAAAAAAABOOOM! The bomb blew up, you should have studied harder at the academy."
+	puts "KAAAAAAAAAAAAAAAAABOOOM! The bomb blew up, you should have studied harder at the academy. GAME OVER!!!!!!!!!!!!!!!!"
 	return
 end
 

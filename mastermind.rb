@@ -33,6 +33,8 @@ class Bombsquad
 			standing = unknown_guess(current_guess)
 
 		if standing[:precise].length == 4
+			puts "tick...tick....tick"
+			puts "BOMB DEFUSED"
 			puts "The bomb has been defused, you saved the day!"
 			return
 
@@ -100,7 +102,7 @@ class Player
 		puts "If you can't break the code in 10 attempts, the bomb will detonate."
 		puts "You are the only one who can break it."
 		puts "Good luck, everyone is counting on you."
-		puts "Your choices are R (red), Y (yellow), W (white), O (orange), B (blue), and P (purple)"
+		puts "Your choices are R (Red), Y (Yellow), W (White), O (Orange), B (Blue), and P (Purple)"
 		puts "Don't screw this up buddy times-a-wastin'"
 		puts "tick.....tick.....tick........"
 		second_guess(gets.chomp)
@@ -110,4 +112,3 @@ class Player
 		guess.split('')
 	end
 end
-
